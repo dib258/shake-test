@@ -13,7 +13,6 @@
 		9324B21C194A1FCB003A6E7A /* tshirt.png in Resources */ = {isa = PBXBuildFile; fileRef = 9324B218194A1FCB003A6E7A /* tshirt.png */; };
 		9324B21F194A20D2003A6E7A /* CategorieVetement.m in Sources */ = {isa = PBXBuildFile; fileRef = 9324B21E194A20D2003A6E7A /* CategorieVetement.m */; };
 		938FAD36194995AE00C7F2FF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 938FAD35194995AE00C7F2FF /* ViewController.m */; };
-		938FB2C81949AF8600C7F2FF /* BTCoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 938FB2C71949AF8600C7F2FF /* BTCoreDataHelper.m */; };
 		938FB2CE1949E4BF00C7F2FF /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 938FB2CD1949E4BF00C7F2FF /* MyCollectionViewCell.m */; };
 		93AEAB881948ABA8000B68D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93AEAB871948ABA8000B68D2 /* Foundation.framework */; };
 		93AEAB8A1948ABA8000B68D2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93AEAB891948ABA8000B68D2 /* CoreGraphics.framework */; };
@@ -36,6 +35,7 @@
 		93AEABC91948F928000B68D2 /* Vetement.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AEABC81948F928000B68D2 /* Vetement.m */; };
 		93AEABCC1948F928000B68D2 /* Couleur.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AEABCB1948F928000B68D2 /* Couleur.m */; };
 		93AEABCF1948F928000B68D2 /* Meteo.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AEABCE1948F928000B68D2 /* Meteo.m */; };
+		93C62B02194AFE1000F6B677 /* BTCoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C62B01194AFE1000F6B677 /* BTCoreDataHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +57,6 @@
 		9324B21E194A20D2003A6E7A /* CategorieVetement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategorieVetement.m; sourceTree = "<group>"; };
 		938FAD34194995AE00C7F2FF /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		938FAD35194995AE00C7F2FF /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		938FB2C61949AF8600C7F2FF /* BTCoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTCoreDataHelper.h; path = ../../../../Git/Psychomatic/Psychomatic/BTCoreDataHelper.h; sourceTree = "<group>"; };
-		938FB2C71949AF8600C7F2FF /* BTCoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTCoreDataHelper.m; path = ../../../../Git/Psychomatic/Psychomatic/BTCoreDataHelper.m; sourceTree = "<group>"; };
 		938FB2CC1949E4BF00C7F2FF /* MyCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewCell.h; sourceTree = "<group>"; };
 		938FB2CD1949E4BF00C7F2FF /* MyCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewCell.m; sourceTree = "<group>"; };
 		93AEAB841948ABA8000B68D2 /* ShakeCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShakeCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +88,8 @@
 		93AEABCB1948F928000B68D2 /* Couleur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Couleur.m; sourceTree = "<group>"; };
 		93AEABCD1948F928000B68D2 /* Meteo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Meteo.h; sourceTree = "<group>"; };
 		93AEABCE1948F928000B68D2 /* Meteo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Meteo.m; sourceTree = "<group>"; };
+		93C62B00194AFE1000F6B677 /* BTCoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCoreDataHelper.h; sourceTree = "<group>"; };
+		93C62B01194AFE1000F6B677 /* BTCoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCoreDataHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,9 +163,9 @@
 		93AEAB8F1948ABA8000B68D2 /* ShakeCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				93C62B00194AFE1000F6B677 /* BTCoreDataHelper.h */,
+				93C62B01194AFE1000F6B677 /* BTCoreDataHelper.m */,
 				9324B214194A1FB6003A6E7A /* Images */,
-				938FB2C61949AF8600C7F2FF /* BTCoreDataHelper.h */,
-				938FB2C71949AF8600C7F2FF /* BTCoreDataHelper.m */,
 				93AEABD019498D7C000B68D2 /* Models */,
 				93AEAB981948ABA8000B68D2 /* AppDelegate.h */,
 				93AEAB991948ABA8000B68D2 /* AppDelegate.m */,
@@ -336,12 +336,12 @@
 				93AEABC91948F928000B68D2 /* Vetement.m in Sources */,
 				93AEABC61948F928000B68D2 /* TypeVetement.m in Sources */,
 				938FAD36194995AE00C7F2FF /* ViewController.m in Sources */,
+				93C62B02194AFE1000F6B677 /* BTCoreDataHelper.m in Sources */,
 				93AEABCC1948F928000B68D2 /* Couleur.m in Sources */,
 				93AEAB9D1948ABA8000B68D2 /* ShakeCoreData.xcdatamodeld in Sources */,
 				93AEAB9A1948ABA8000B68D2 /* AppDelegate.m in Sources */,
 				9324B21F194A20D2003A6E7A /* CategorieVetement.m in Sources */,
 				93AEAB961948ABA8000B68D2 /* main.m in Sources */,
-				938FB2C81949AF8600C7F2FF /* BTCoreDataHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
