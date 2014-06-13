@@ -114,6 +114,17 @@
     return cell;
 }
 
+#pragma mark UICollectionViewDelegate
+
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    UICollectionViewFlowLayout *myLayout =
+    [[UICollectionViewFlowLayout alloc]init];
+    
+    myLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+    [self.collectionView setCollectionViewLayout:myLayout animated:YES];
+}
+
 /*
 #pragma mark - Navigation
 

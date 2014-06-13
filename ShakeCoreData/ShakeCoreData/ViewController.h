@@ -14,5 +14,6 @@
 @property (nonatomic, retain) NSManagedObjectContext *context;
 @property (nonatomic, retain) NSManagedObjectModel *model;
 
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @end
