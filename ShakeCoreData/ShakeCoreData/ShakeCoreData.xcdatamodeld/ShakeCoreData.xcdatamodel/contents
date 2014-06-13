@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13D65" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="CategorieVetement" representedClassName="CategorieVetement" syncable="YES">
+        <attribute name="logo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nom" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="vetements" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Vetement" inverseName="categorie" inverseEntity="Vetement" syncable="YES"/>
+    </entity>
+    <entity name="Couleur" representedClassName="Couleur" syncable="YES">
+        <attribute name="nom" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="valeur" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="vetements" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Vetement" inverseName="couleurs" inverseEntity="Vetement" syncable="YES"/>
+    </entity>
+    <entity name="Meteo" representedClassName="Meteo" syncable="YES">
+        <attribute name="nom" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="vetements" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Vetement" inverseName="meteo" inverseEntity="Vetement" syncable="YES"/>
+    </entity>
+    <entity name="TypeVetement" representedClassName="TypeVetement" syncable="YES">
+        <attribute name="nom" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="vetements" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Vetement" inverseName="type" inverseEntity="Vetement" syncable="YES"/>
+    </entity>
+    <entity name="Vetement" representedClassName="Vetement" syncable="YES">
+        <attribute name="image" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="isSale" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <relationship name="categorie" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CategorieVetement" inverseName="vetements" inverseEntity="CategorieVetement" syncable="YES"/>
+        <relationship name="couleurs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Couleur" inverseName="vetements" inverseEntity="Couleur" syncable="YES"/>
+        <relationship name="meteo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Meteo" inverseName="vetements" inverseEntity="Meteo" syncable="YES"/>
+        <relationship name="type" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TypeVetement" inverseName="vetements" inverseEntity="TypeVetement" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CategorieVetement" positionX="-254" positionY="-199" width="128" height="88"/>
+        <element name="Couleur" positionX="162" positionY="-63" width="128" height="88"/>
+        <element name="Meteo" positionX="-290" positionY="-81" width="128" height="73"/>
+        <element name="TypeVetement" positionX="-74" positionY="54" width="128" height="73"/>
+        <element name="Vetement" positionX="-63" positionY="-108" width="128" height="133"/>
+    </elements>
+</model>
